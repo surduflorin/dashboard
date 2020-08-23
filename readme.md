@@ -3,7 +3,6 @@
 **Grapefruit Dashboard** is admin dashboard template based on **React Boilerplate**. It provides you clean modern design and high performance react app with various color theme. This template has been built to makes the development process easy and fast for you, which is supported by material-ui v3.x, jss (css in js), immutable js, webpack, npm modern workflow and flexible layout with flexbox.
 
 ## Template Feature
-
 -   Built with one of most popular javascript library React.JS and Redux
 -   Use Google Material Design and Icons
 -   Easy to manage data collection with immutable.js
@@ -12,9 +11,7 @@
 -   JSS (CSS in JS)
 -   Clean code maintained by eslint
 
-
 ## Installation
-
  - Clone this project
  - Install module dependencies by run this script in terminal
     `npm install`
@@ -25,7 +22,6 @@
  - Navigate to  [http://localhost:3001](http://localhost:3001)
 
 ## Deployment
-
  - First you need to build the production assets first
     `npm run build`
  - Then start the app
@@ -47,6 +43,3 @@ To make documenation easy and effective to access and implement, we attached sou
 
 ## License
 This project is licensed under the terms of the Grapefruit
-
-
- 
