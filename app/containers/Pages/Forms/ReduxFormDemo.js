@@ -153,11 +153,11 @@ class ReduxFormDemo extends Component {
                 <div className={classes.fieldBasic}>
                   <FormLabel component="label">Email Notifications</FormLabel>
                   <div className={classes.inlineWrap}>
-                    <FormControlLabel control={<Field name="onof" component={SwitchRedux} />} label="Monday" />
-                    <FormControlLabel control={<Field name="onof" component={SwitchRedux} />} label="Tuesday" />
-                    <FormControlLabel control={<Field name="onof" component={SwitchRedux} />} label="Wednesday" />
-                    <FormControlLabel control={<Field name="onof" component={SwitchRedux} />} label="Thursday" />
-                    <FormControlLabel control={<Field name="onof" component={SwitchRedux} />} label="Friday" />
+                    <FormControlLabel control={<Field name="Monday" component={SwitchRedux} />} label="Monday" />
+                    <FormControlLabel control={<Field name="Tuesday" component={SwitchRedux} />} label="Tuesday" />
+                    <FormControlLabel control={<Field name="Wednesday" component={SwitchRedux} />} label="Wednesday" />
+                    <FormControlLabel control={<Field name="Thursday" component={SwitchRedux} />} label="Thursday" />
+                    <FormControlLabel control={<Field name="Friday" component={SwitchRedux} />} label="Friday" />
                   </div>
                 </div>
                 {/*<div className={classes.fieldBasic}>

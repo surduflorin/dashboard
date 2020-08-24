@@ -64,7 +64,7 @@ const ErrorWrap = (props) => (
             component={Link}
             to="/app/"
           >
-            Go To Dashboard
+            Go To Home
           </Button>
         </div>
       );

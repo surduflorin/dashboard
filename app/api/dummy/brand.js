@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'Dashboard',
-  desc: 'Dashboard',
-  prefix: 'Dashboard',
-  footerText: 'Dashboard All Rights Reserved',
-  logoText: 'Dashboard',
+  name: 'NDash',
+  desc: 'NDash',
+  prefix: 'NDash',
+  footerText: 'NDash All Rights Reserved',
+  logoText: 'NDash',
 };

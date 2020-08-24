@@ -75,7 +75,7 @@ class RegisterForm extends React.Component {
         <Hidden mdUp>
           <NavLink to="/app" className={classNames(classes.brand, classes.outer)}>
             <img src={logo} alt={brand.name} />
-            {brand.name}
+            {/**brand.name**/}
           </NavLink>
         </Hidden>
         <Paper className={classNames(classes.paperWrap, deco && classes.petal)}>
@@ -83,7 +83,7 @@ class RegisterForm extends React.Component {
             <div className={classes.topBar}>
               <NavLink to="/app" className={classes.brand}>
                 <img src={logo} alt={brand.name} />
-                {brand.name}
+                {/**brand.name**/}
               </NavLink>
               <Button size="small" className={classes.buttonLink} component={LinkBtn} to="/login">
                 <Icon className={classes.icon}>arrow_forward</Icon>

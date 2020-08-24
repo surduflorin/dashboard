@@ -271,7 +271,7 @@ const styles = theme => ({
       textOverflow: 'ellipsis',
       overflow: 'hidden',
       whiteSpace: 'nowrap',
-      width: 110
+      width: 200
     },
     '& button': {
       fontSize: 12,

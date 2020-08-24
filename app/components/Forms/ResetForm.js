@@ -37,7 +37,7 @@ class ResetForm extends React.Component {
         <div className={classes.topBar}>
           <NavLink to="/app" className={classes.brand}>
             <img src={logo} alt={brand.name} />
-            {brand.name}
+            {/**brand.name**/}
           </NavLink>
         </div>
         <Typography variant="h4" className={classes.title} gutterBottom>

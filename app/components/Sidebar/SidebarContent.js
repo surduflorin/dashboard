@@ -63,7 +63,7 @@ function SidebarContent(props) {
       <div className={classes.drawerHeader}>
         <NavLink to="/app" className={classNames(classes.brand, classes.brandBar, turnDarker && classes.darker)}>
           <img src={logo} alt={brand.name} />
-          {brand.name}
+          {/**brand.name**/}
         </NavLink>
         {isLogin && (
           <div
@@ -77,7 +77,7 @@ function SidebarContent(props) {
             />
             <div>
               <h4>{dummy.user.name}</h4>
-              <Button size="small" onClick={openMenuStatus}>
+              {/*<Button size="small" onClick={openMenuStatus}>
                 <i className={classNames(classes.dotStatus, setStatus(status))} />
                 {status}
               </Button>
@@ -104,7 +104,7 @@ function SidebarContent(props) {
                   <i className={classNames(classes.dotStatus, classes.offline)} />
                   Offline
                 </MenuItem>
-              </Menu>
+              </Menu>*/}
             </div>
           </div>
         )}

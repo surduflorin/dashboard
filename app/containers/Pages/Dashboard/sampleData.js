@@ -14,7 +14,7 @@ const data1 = [
   {
     name: 'Jun',
     low: 100,
-    high: 120,
+    high: 115,
     open: 110
   },
   {
