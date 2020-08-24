@@ -13,18 +13,18 @@ import dataMenu from 'dan-api/ui/menu';
 import Decoration from '../Decoration';
 import styles from '../appStyles-jss';
 
-function LeftSidebarLayout(props) {
+function RightSidebarLayout(props) {
   const {
     classes,
     children,
     toggleDrawer,
     sidebarOpen,
+    history,
     loadTransition,
     pageLoaded,
     mode,
     gradient,
     deco,
-    history,
     bgPosition,
     changeMode,
     place,
@@ -37,21 +37,14 @@ function LeftSidebarLayout(props) {
         toggleDrawerOpen={toggleDrawer}
         margin={sidebarOpen}
         gradient={gradient}
-        position="left-sidebar"
+        position="right-sidebar"
         changeMode={changeMode}
         mode={mode}
         title={place}
         history={history}
         openGuide={handleOpenGuide}
       />
-      <Sidebar
-        open={sidebarOpen}
-        toggleDrawerOpen={toggleDrawer}
-        loadTransition={loadTransition}
-        dataMenu={dataMenu}
-        leftSidebar
-      />
-      <main className={classNames(classes.content, !sidebarOpen ? classes.contentPaddingLeft : '')} id="mainContent">
+      <main className={classNames(classes.content, !sidebarOpen ? classes.contentPaddingRight : '')} id="mainContent">
         <Decoration
           mode={mode}
           gradient={gradient}
@@ -78,11 +71,18 @@ function LeftSidebarLayout(props) {
           </Fade>
         </section>
       </main>
+      <Sidebar
+        open={sidebarOpen}
+        toggleDrawerOpen={toggleDrawer}
+        loadTransition={loadTransition}
+        dataMenu={dataMenu}
+        leftSidebar={false}
+      />
     </Fragment>
   );
 }
 
-LeftSidebarLayout.propTypes = {
+RightSidebarLayout.propTypes = {
   classes: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,
   history: PropTypes.object.isRequired,
@@ -100,4 +100,4 @@ LeftSidebarLayout.propTypes = {
   handleOpenGuide: PropTypes.func.isRequired
 };
 
-export default (withStyles(styles)(LeftSidebarLayout));
+export default (withStyles(styles)(RightSidebarLayout));

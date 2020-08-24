@@ -150,11 +150,6 @@ function HeaderMenu(props) {
                   <i className="ion-ios-lightbulb-outline" />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="Show Guide" placement="bottom">
-                <IconButton className={classes.button} onClick={openGuide}>
-                  <i className="ion-ios-help-outline" />
-                </IconButton>
-              </Tooltip>
             </div>
           </div>
           <NavLink to={logoLink} className={classes.brand}>

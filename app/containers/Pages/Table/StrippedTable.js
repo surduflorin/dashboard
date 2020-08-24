@@ -36,11 +36,6 @@ function StrippedTable(props) {
   const { classes } = props;
   return (
     <Fragment>
-      <Toolbar className={classes.toolbar}>
-        <div className={classes.title}>
-          <Typography className={classes.title} variant="h6">Nutrition</Typography>
-        </div>
-      </Toolbar>
       <div className={classes.rootTable}>
         <Table className={classNames(classes.table, classes.stripped)}>
           <TableHead>

@@ -1,6 +1,6 @@
-### Grapefruit Dashboard
+### Dashboard
 ----------
-**Grapefruit Dashboard** is admin dashboard template based on **React Boilerplate**. It provides you clean modern design and high performance react app with various color theme. This template has been built to makes the development process easy and fast for you, which is supported by material-ui v3.x, jss (css in js), immutable js, webpack, npm modern workflow and flexible layout with flexbox.
+**Dashboard** is admin dashboard template based on **React Boilerplate**. It provides you clean modern design and high performance react app with various color theme. This template has been built to makes the development process easy and fast for you, which is supported by material-ui v3.x, jss (css in js), immutable js, webpack, npm modern workflow and flexible layout with flexbox.
 
 ## Template Feature
 -   Built with one of most popular javascript library React.JS and Redux
@@ -42,4 +42,4 @@ To make documenation easy and effective to access and implement, we attached sou
 -   You can see through, copy and paste directly any component in front of your eyes.
 
 ## License
-This project is licensed under the terms of the Grapefruit
+This project is licensed under the terms of the Dashboard

@@ -37,7 +37,7 @@ class ReduxForm extends React.Component {
           <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={description} />
         </Helmet>
-        <PapperBlock title="Redux Form" icon="ios-list-box-outline" desc="This is a simple demonstration of how to connect all the standard material-ui form elements to redux-form.">
+        <PapperBlock title="User Details" icon="ios-list-box-outline">
           <div>
             <ReduxFormDemo onSubmit={(values) => this.showResult(values)} />
             <SourceReader componentName={docSrc + 'ReduxFormDemo.js'} />

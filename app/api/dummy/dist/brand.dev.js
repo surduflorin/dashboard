@@ -1,9 +1,9 @@
 "use strict";
 
 module.exports = {
-  name: 'Grapefruit Dashboard',
-  desc: 'Grapefruit - React  Dashboard',
-  prefix: 'grapefruit',
-  footerText: 'Grapefruit All Rights Reserved',
-  logoText: 'Grapefruit Dashboard'
+  name: 'Dashboard',
+  desc: 'Dashboard',
+  prefix: 'Dashboard',
+  footerText: 'Dashboard All Rights Reserved',
+  logoText: 'Dashboard'
 };

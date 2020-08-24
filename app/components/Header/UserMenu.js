@@ -52,7 +52,7 @@ function UserMenu(props) {
         color="inherit"
         className={classNames(classes.notifIcon, dark ? classes.dark : classes.light)}
       >
-        <Badge className={classes.badge} badgeContent={4} color="secondary">
+        <Badge className={classes.badge} badgeContent={5} color="secondary">
           <i className="ion-ios-bell-outline" />
         </Badge>
       </IconButton>
@@ -125,7 +125,7 @@ function UserMenu(props) {
                 <Error />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary="Suspendisse pharetra pulvinar sollicitudin. Aenean ut orci eu odio cursus lobortis eget tempus velit. " className={classes.textNotif} secondary="Jan 9, 2016" />
+            <ListItemText primary="Lorem Ipsum is simply dummy text of the printing and typesetting industry." className={classes.textNotif} secondary="20 August 2020" />
           </div>
         </MenuItem>
       </Menu>
@@ -154,7 +154,7 @@ function UserMenu(props) {
         <MenuItem onClick={handleClose} component={Link} to={link.email}>
           My Inbox
           <ListItemIcon>
-            <Badge className={classNames(classes.badge, classes.badgeMenu)} badgeContent={2} color="secondary" />
+            <Badge className={classNames(classes.badge, classes.badgeMenu)} badgeContent={1} color="secondary" />
           </ListItemIcon>
         </MenuItem>
         <Divider />
