@@ -1,46 +1,76 @@
 const data1 = [
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400
+    name: 'Apr',
+    low: 100,
+    high: 80,
+    open: 90
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 1210
+    name: 'May',
+    low: 100,
+    high: 89,
+    open: 101
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 2800,
-    amt: 490
+    name: 'Jun',
+    low: 100,
+    high: 120,
+    open: 110
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 908,
-    amt: 2000
+    name: 'Jul',
+    low: 88,
+    high: 99,
+    open: 100
   },
   {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 1081
+    name: 'Aug',
+    low: 89,
+    high: 80,
+    open: 108
   },
   {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 3000
+    name: 'Sep',
+    low: 79,
+    high: 80,
+    open: 78
   },
   {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100
+    name: 'Oct',
+    low: 109,
+    high: 100,
+    open: 101
   },
+  {
+    name: 'Nov',
+    low: 101,
+    high: 90,
+    open: 90
+  },
+  {
+    name: 'Dec',
+    low: 80,
+    high: 100,
+    open: 110
+  },
+  {
+    name: 'Jan',
+    low: 95,
+    high: 97,
+    open: 80
+  },
+  {
+    name: 'Feb',
+    low: 78,
+    high: 88,
+    open: 108
+  },
+  {
+    name: 'Mar',
+    low: 89,
+    high: 80,
+    open: 101
+  }
 ];
 
 export default data1;

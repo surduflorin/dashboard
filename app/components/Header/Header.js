@@ -131,7 +131,7 @@ function Header(props) {
         <Hidden smDown>
           <div className={classes.headerProperties}>
             <div className={classNames(classes.headerAction, showTitle && classes.fadeOut)}>
-              {fullScreen ? (
+              {/*{fullScreen ? (
                 <Tooltip title="Exit Full Screen" placement="bottom">
                   <IconButton className={classes.button} onClick={closeFullScreen}>
                     <i className="ion-ios-crop" />
@@ -148,7 +148,7 @@ function Header(props) {
                 <IconButton className={classes.button} onClick={() => turnMode(mode)}>
                   <i className="ion-ios-lightbulb-outline" />
                 </IconButton>
-              </Tooltip>
+              </Tooltip> */}
             </div>
             <Typography component="h2" className={classNames(classes.headerTitle, showTitle && classes.show)}>
               {title}

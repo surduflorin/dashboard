@@ -65,7 +65,7 @@ class LoginForm extends React.Component {
     return (
       <Fragment>
         <Hidden mdUp>
-          <NavLink to="/" className={classNames(classes.brand, classes.outer)}>
+          <NavLink to="/app" className={classNames(classes.brand, classes.outer)}>
             <img src={logo} alt={brand.name} />
             {brand.name}
           </NavLink>
@@ -73,7 +73,7 @@ class LoginForm extends React.Component {
         <Paper className={classNames(classes.paperWrap, deco && classes.petal)}>
           <Hidden smDown>
             <div className={classes.topBar}>
-              <NavLink to="/" className={classes.brand}>
+              <NavLink to="/app" className={classes.brand}>
                 <img src={logo} alt={brand.name} />
                 {brand.name}
               </NavLink>

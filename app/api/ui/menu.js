@@ -3,7 +3,7 @@ module.exports = [
     key: 'dashboard',
     name: 'Dashboard',
     icon: 'ios-home-outline',
-    linkParent: '/app/dashboard'
+    linkParent: '/app'
   },
   {
     key: 'auth',

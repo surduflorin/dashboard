@@ -35,7 +35,7 @@ class ResetForm extends React.Component {
     return (
       <Paper className={classNames(classes.paperWrap, deco && classes.petal)}>
         <div className={classes.topBar}>
-          <NavLink to="/" className={classes.brand}>
+          <NavLink to="/app" className={classes.brand}>
             <img src={logo} alt={brand.name} />
             {brand.name}
           </NavLink>

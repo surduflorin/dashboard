@@ -73,7 +73,7 @@ class RegisterForm extends React.Component {
     return (
       <Fragment>
         <Hidden mdUp>
-          <NavLink to="/" className={classNames(classes.brand, classes.outer)}>
+          <NavLink to="/app" className={classNames(classes.brand, classes.outer)}>
             <img src={logo} alt={brand.name} />
             {brand.name}
           </NavLink>
@@ -81,7 +81,7 @@ class RegisterForm extends React.Component {
         <Paper className={classNames(classes.paperWrap, deco && classes.petal)}>
           <Hidden smDown>
             <div className={classes.topBar}>
-              <NavLink to="/" className={classes.brand}>
+              <NavLink to="/app" className={classes.brand}>
                 <img src={logo} alt={brand.name} />
                 {brand.name}
               </NavLink>
@@ -94,8 +94,8 @@ class RegisterForm extends React.Component {
           <Typography variant="h4" className={classes.title} gutterBottom>
             Register
           </Typography>
-          <Typography variant="caption" className={classes.subtitle} gutterBottom align="center">
-            Lorem ipsum dolor sit amet
+          {/*<Typography variant="caption" className={classes.subtitle} gutterBottom align="center">
+           
           </Typography>
           <Tabs
             value={tab}
@@ -107,7 +107,7 @@ class RegisterForm extends React.Component {
           >
             <Tab label="With Email" />
             <Tab label="With Social Media" />
-          </Tabs>
+          </Tabs>*/}
           {tab === 0 && (
             <section className={classes.formWrap}>
               <form onSubmit={handleSubmit}>

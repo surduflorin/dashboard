@@ -37,10 +37,10 @@ const styles = theme => ({
     marginTop: 4,
   },
   table: {
-    minWidth: 860,
+    minWidth: 300,
   },
   tableSmall: {
-    minWidth: 500,
+    minWidth: 300,
   },
   actions: {
     color: theme.palette.text.secondary,

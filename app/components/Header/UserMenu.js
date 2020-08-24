@@ -46,6 +46,42 @@ function UserMenu(props) {
   const { anchorEl, openMenu } = menuState;
   return (
     <div>
+    <Button onClick={handleMenu('user-setting')}>
+        <Avatar
+          alt={dummy.user.name}
+          src={dummy.user.avatar}
+        />
+      </Button>
+      <Menu
+        id="menu-appbar"
+        anchorEl={anchorEl}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        open={openMenu === 'user-setting'}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose} component={Link} to={link.profile}>My Profile</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={link.calendar}>My Calendar</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={link.email}>
+          My Inbox
+          <ListItemIcon>
+            <Badge className={classNames(classes.badge, classes.badgeMenu)} badgeContent={1} color="secondary" />
+          </ListItemIcon>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={handleClose} component={Link} to="/">
+          <ListItemIcon>
+            <ExitToApp />
+          </ListItemIcon>
+          Log Out
+        </MenuItem>
+      </Menu>
       <IconButton
         aria-haspopup="true"
         onClick={handleMenu('notification')}
@@ -129,42 +165,7 @@ function UserMenu(props) {
           </div>
         </MenuItem>
       </Menu>
-      <Button onClick={handleMenu('user-setting')}>
-        <Avatar
-          alt={dummy.user.name}
-          src={dummy.user.avatar}
-        />
-      </Button>
-      <Menu
-        id="menu-appbar"
-        anchorEl={anchorEl}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-        open={openMenu === 'user-setting'}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={handleClose} component={Link} to={link.profile}>My Profile</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to={link.calendar}>My Calendar</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to={link.email}>
-          My Inbox
-          <ListItemIcon>
-            <Badge className={classNames(classes.badge, classes.badgeMenu)} badgeContent={1} color="secondary" />
-          </ListItemIcon>
-        </MenuItem>
-        <Divider />
-        <MenuItem onClick={handleClose} component={Link} to="/">
-          <ListItemIcon>
-            <ExitToApp />
-          </ListItemIcon>
-          Log Out
-        </MenuItem>
-      </Menu>
+      
     </div>
   );
 }

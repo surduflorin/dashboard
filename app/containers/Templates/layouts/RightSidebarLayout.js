@@ -13,7 +13,7 @@ import dataMenu from 'dan-api/ui/menu';
 import Decoration from '../Decoration';
 import styles from '../appStyles-jss';
 
-function LeftSidebarLayout(props) {
+function RightSidebarLayout(props) {
   const {
     classes,
     children,
@@ -37,14 +37,14 @@ function LeftSidebarLayout(props) {
         toggleDrawerOpen={toggleDrawer}
         margin={sidebarOpen}
         gradient={gradient}
-        position="Left-sidebar"
+        position="right-sidebar"
         changeMode={changeMode}
         mode={mode}
         title={place}
         history={history}
         openGuide={handleOpenGuide}
       />
-      <main className={classNames(classes.content, !sidebarOpen ? classes.contentPaddingLeft : '')} id="mainContent">
+      <main className={classNames(classes.content, !sidebarOpen ? classes.contentPaddingRight : '')} id="mainContent">
         <Decoration
           mode={mode}
           gradient={gradient}
@@ -82,7 +82,7 @@ function LeftSidebarLayout(props) {
   );
 }
 
-LeftSidebarLayout.propTypes = {
+RightSidebarLayout.propTypes = {
   classes: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,
   history: PropTypes.object.isRequired,
@@ -100,4 +100,4 @@ LeftSidebarLayout.propTypes = {
   handleOpenGuide: PropTypes.func.isRequired
 };
 
-export default (withStyles(styles)(LeftSidebarLayout));
+export default (withStyles(styles)(RightSidebarLayout));

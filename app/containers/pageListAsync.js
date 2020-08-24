@@ -2,7 +2,7 @@ import Loadable from 'react-loadable';
 import Loading from 'dan-components/Loading';
 
 export const BlankPage = Loadable({
-  loader: () => import('./Pages/BlankPage'),
+  loader: () => import('./Pages/Dashboard'),
   loading: Loading,
 });
 export const DashboardPage = Loadable({

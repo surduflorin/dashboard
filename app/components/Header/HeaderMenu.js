@@ -132,7 +132,7 @@ function HeaderMenu(props) {
         <Hidden smDown>
           <div className={classes.headerProperties}>
             <div className={classNames(classes.headerAction, classes.invert)}>
-              {fullScreen ? (
+              {/*{fullScreen ? (
                 <Tooltip title="Exit Full Screen" placement="bottom">
                   <IconButton className={classes.button} onClick={closeFullScreen}>
                     <i className="ion-ios-crop" />
@@ -149,7 +149,7 @@ function HeaderMenu(props) {
                 <IconButton className={classes.button} onClick={() => turnMode(mode)}>
                   <i className="ion-ios-lightbulb-outline" />
                 </IconButton>
-              </Tooltip>
+              </Tooltip>*/}
             </div>
           </div>
           <NavLink to={logoLink} className={classes.brand}>

@@ -13,18 +13,18 @@ import dataMenu from 'dan-api/ui/menu';
 import Decoration from '../Decoration';
 import styles from '../appStyles-jss';
 
-function RightSidebarLayout(props) {
+function LeftSidebarLayout(props) {
   const {
     classes,
     children,
     toggleDrawer,
     sidebarOpen,
-    history,
     loadTransition,
     pageLoaded,
     mode,
     gradient,
     deco,
+    history,
     bgPosition,
     changeMode,
     place,
@@ -37,14 +37,21 @@ function RightSidebarLayout(props) {
         toggleDrawerOpen={toggleDrawer}
         margin={sidebarOpen}
         gradient={gradient}
-        position="right-sidebar"
+        position="left-sidebar"
         changeMode={changeMode}
         mode={mode}
         title={place}
         history={history}
         openGuide={handleOpenGuide}
       />
-      <main className={classNames(classes.content, !sidebarOpen ? classes.contentPaddingRight : '')} id="mainContent">
+      <Sidebar
+        open={sidebarOpen}
+        toggleDrawerOpen={toggleDrawer}
+        loadTransition={loadTransition}
+        dataMenu={dataMenu}
+        leftSidebar
+      />
+      <main className={classNames(classes.content, !sidebarOpen ? classes.contentPaddingLeft : '')} id="mainContent">
         <Decoration
           mode={mode}
           gradient={gradient}
@@ -71,18 +78,11 @@ function RightSidebarLayout(props) {
           </Fade>
         </section>
       </main>
-      <Sidebar
-        open={sidebarOpen}
-        toggleDrawerOpen={toggleDrawer}
-        loadTransition={loadTransition}
-        dataMenu={dataMenu}
-        leftSidebar={false}
-      />
     </Fragment>
   );
 }
 
-RightSidebarLayout.propTypes = {
+LeftSidebarLayout.propTypes = {
   classes: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,
   history: PropTypes.object.isRequired,
@@ -100,4 +100,4 @@ RightSidebarLayout.propTypes = {
   handleOpenGuide: PropTypes.func.isRequired
 };
 
-export default (withStyles(styles)(RightSidebarLayout));
+export default (withStyles(styles)(LeftSidebarLayout));

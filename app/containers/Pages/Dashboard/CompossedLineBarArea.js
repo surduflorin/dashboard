@@ -56,9 +56,9 @@ function CompossedLineBarArea(props) {
           <CartesianAxis vertical={false} />
           <Tooltip />
           <Legend />
-          <Area type="monotone" dataKey="amt" fillOpacity="0.8" fill={color.main} stroke="none" />
-          <Bar dataKey="pv" barSize={60} fillOpacity="0.8" fill={color.secondary} />
-          <Line type="monotone" dataKey="uv" strokeWidth={4} stroke={color.third} />
+          <Area type="monotone" dataKey="low" fillOpacity="0.8" fill={color.main} stroke="none" />
+          <Bar dataKey="high" barSize={60} fillOpacity="0.8" fill={color.secondary} />
+          <Line type="monotone" dataKey="open" strokeWidth={4} stroke={color.third} />
         </ComposedChart>
       </ResponsiveContainer>
     </div>

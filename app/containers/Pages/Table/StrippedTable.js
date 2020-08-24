@@ -12,24 +12,21 @@ import TableRow from '@material-ui/core/TableRow';
 import styles from 'dan-components/Tables/tableStyle-jss';
 
 let id = 0;
-function createData(name, calories, fat, carbs, protein) {
+function createData(name, procent, procentvalue) {
   id += 1;
   return {
     id,
     name,
-    calories,
-    fat,
-    carbs,
-    protein
+    procent, 
+    procentvalue
   };
 }
 
 const data = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData('NASDAQ', - 0.85, 5.05555),
+  createData('APPL', + 0.51, 126.56),
+  createData('DOW J', - 0.34, 19.92602),
+  createData('GOOG', + 0.70, 534.53)
 ];
 
 function StrippedTable(props) {
@@ -38,23 +35,18 @@ function StrippedTable(props) {
     <Fragment>
       <div className={classes.rootTable}>
         <Table className={classNames(classes.table, classes.stripped)}>
-          <TableHead>
-            <TableRow>
-              <TableCell padding="default">Dessert (100g serving)</TableCell>
-              <TableCell align="right">Calories</TableCell>
-              <TableCell align="right">Fat (g)</TableCell>
-              <TableCell align="right">Carbs (g)</TableCell>
-              <TableCell align="right">Protein (g)</TableCell>
-            </TableRow>
-          </TableHead>
           <TableBody>
             {data.map(n => ([
               <TableRow key={n.id}>
-                <TableCell padding="default">{n.name}</TableCell>
-                <TableCell align="right">{n.calories}</TableCell>
-                <TableCell align="right">{n.fat}</TableCell>
-                <TableCell align="right">{n.carbs}</TableCell>
-                <TableCell align="right">{n.protein}</TableCell>
+                <TableCell padding="default">
+                  <h3><b>{n.name}</b></h3>
+                  <div inlineWrap>
+                    {n.procentvalue}
+                  </div>
+                </TableCell>
+                <TableCell align="right">
+                  <h3><b>{n.procent}%</b></h3>
+                </TableCell>
               </TableRow>
             ]))}
           </TableBody>
